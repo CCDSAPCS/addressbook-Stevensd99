@@ -24,14 +24,21 @@ public class AddressBook {
 		return haveContact(s);
 		
 	}
+	public int addContact(){
+		numfriends +1;
+		return numfriends;
+	}
 	public static void main(String args[]){
 		Scanner s = new Scanner(System.in);
 		String choice = s.next();
-		System.out.println(menu())
+		System.out.println("You can delete a contact, add a contact, print the contacts, or see if your list contains a contact."\n " What would you like to do?")
+		
 		if(choice == "add"){
-			System.out.println("What would you like to add? ");
-			String added = s.next();
-			addContact(added);
+			Contact c = new Contact;
+			System.out.println("Imput name: ");
+			Contact c = new Contact;
+			c = s.next();
+			addContact(c);
 		}
 		if(choice == "delete"){
 			System.out.println("What would you like to add? ");
